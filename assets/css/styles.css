@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0F1B4C
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins',sans-serif;
+}
+/*======== Chung========== */
+.content{
+    width: 1110px;
+    max-width: calc(100% - 48px); /*Khac phuc tinh trang co thanh cuon khi khich thuoc trinh duyet nho hon 1110px, va cac dieu 2 ben 24px*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block; /*de cho min-width hoat dong do no la the a =>inline*/
+    min-width: 98px;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font: 1.4rem;
+    text-align: center;
+    padding: 18px 16px;
+    color: #e6f0ff;
+
+}
+.btn:hover{
+    opacity: 0.9;
+}
+
+
+/* ======================= */
+
+
+
+/* Tiêu đê */
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6f0ff;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center; /* cho cac the con can giua*/
+    padding-top:  38px; ; /*cach len tren 38px*/
+}
+.navbar ul{
+    display: flex;
+    margin-left: 50px; /* Cac xa logo ra do cac item da co padding 14px nen 64-14*/
+}
+.navbar .dangnhap{
+   margin-left: auto;
+}
+
+.navbar ul a{
+   width: 500px;
+   font-size :1.4rem;
+   color:#4F5361 ;
+   padding: 8px 14px;
+   
+}
+.navbar .action-link{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    
+
+}
+.navbar .action-btn{
+    padding: 13px 16px;
+    margin-left: 18px; /*khoang cach 2 nut*/
+    border-radius: 8px;
+}
+
+.navbar ul a:hover{
+    text-decoration: underline;
+
+}
+.hero{
+    margin-top: 130px;
+   
+    
+}
+.hero .sub-title{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5;  /*27/18*/
+        letter-spacing: 0.01em;
+        color: #687690;
+
+
+
+        
+}
+
+.hero .title{
+    
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+    color:  #000336;
+    margin-top: 8px;
+
+
+}
+.hero .info{
+    width: 51%;
+}
+.hero .desc{
+   
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+    text-transform: none;
+    color: #5A6473;
+    margin-top: 30px;
+}
+ .btn .hero-cta{
+    min-width: 170px;
+    margin-top: 40px;
+}
+.hero-img{
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
+
+
+/*===================Cilents================*/
+.clients{
+    margin-top: 79px;
+    padding: 43px 0 0 64px;
+    background-color: #0689FF;
+    
+}
+
+.clients .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .desc{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25px;
+    color: #7D8589;
+    margin-top: 23px;
+    
+}
+
+.clients .images{
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*===================guides================*/
+
+.guides{
+    margin-top: 40px;
+    padding: 93px 0 0 79px;
+    /* background-color: #0689FF; */
+}
+
+.guides .sub-title{
+    
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color:  #000339;
+    text-align:  center;
+    position: relative;
+
+}
+.guides .sub-title::before{
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height:4px;
+    background-color: #000339;
+    border-radius: 999px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guides .desc{
+    width: 459px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5A6473;
+    text-align: center;
+    margin: 20px auto  0px auto;
+    
+}
+
+.guides .list-guide{
+    margin-top: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.guides .guide-item{
+    margin: 0px 70px;
+    text-align: center;
+}
+.guide-item .title{
+    margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #3B3C45;
+
+
+}
+.guide-item .link{
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #0689FF;
+ 
+}
+.guide-item .muiten{
+    margin-left: 6px;
+}
+.guides-cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;   
+}
+
+.guides-cta .btn{
+    min-width: 170px;
+}
+
+
+/*===============Featured===============*/
+.featured{
+    margin-top: 41px;
+    padding: 110px 0;
+    background-color: #F5FAFE;
+}
+.featured .sub-title{
+    
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+
+}
+
+.featured .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured .desc{
+       
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #5A6473;
+   
+}
+.featured .link{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0689FF;
+    display: flex;
+    align-items: center;
+
+}
+.featured .link .muiten{
+    margin-left: 8px;
+}
+
+.featured .list{
+    margin-top: 70px;
+    display: flex;
+    gap: 30px
+
+}
+.featured .item {
+    flex: 1; 
+    border-radius: 12px;
+    background-color: white;      /*cac item co kich thuoc bang nhau*/
+}
+
+.featured .item .thumb{
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.featured .item .body{
+    padding: 17px 20px 24px;
+}
+
+.featured .item .title{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000339;
+    display: -webkit-box;
+    -webkit-line-clamp :2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.featured .item .desc{
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #A3A6AB;
+    display: -webkit-box;       /*  333-336  hien 3 cham khi noi dung qua 3 hang */                            
+    -webkit-line-clamp :3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all; /*Khong bij be giao dien khi nguoi dung nhap link hay khong co khoang trang*/
+}
+.featured .item .info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.featured .item .label{
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01rem;
+    color:#4D4D52 ;
+}
+
+.featured .item .icon{
+    margin-left: 23px ;
+}
+
+.featured .item .icon:first-child{
+    margin-left: 0px;
+}
+
+
+/*===========Phan stats============*/
+.stats{
+    margin-top: 75px;
+    padding: 50px 0;
+}
+.stats .row{
+    display: flex;
+}
+
+.stats .content{
+    width: 1048px;
+
+}
+.stats .img-block,
+.stats .info{
+    width: 50%;
+}
+
+.stats .img-block img{
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+}
+.stats .info{
+    padding: 79px 0 0 165px;
+}
+.stats .sub-title{
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color:#000339 ;
+    width: 269px;
+}
+
+.stats .sub-title::before{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    background-color:  #000339 ;
+    border-radius: 12px;
+}
+.stats .info .desc{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    width: 309px;
+    line-height: 1.8;
+    color: #5A6473;
+
+}
+.stats .row .value{
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: #000339;
+    margin-top: 30px;
+}
+.stats .row .icon{
+    margin-left: auto;
+}
+.stats .stats-trend{
+    width: 239px;
+    border-radius: 0 0 12px 12px;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding: 15px;
+    
+
+}
+
+
+.stats .img-block{
+    position: relative;
+    top: 0;
+    top: 0;
+    left: 0;
+    
+}
+
+.stats .stats-trend .desc{
+   margin-top: 0;
+    width: 194px;
+    height: 34px;   
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #A7A7A7;
+}
+.stats  .stats-trend .ngang{
+    height: 1px;
+    color:#3B3C45;
+    margin-top: 25px;
+}
